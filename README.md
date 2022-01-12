@@ -64,3 +64,13 @@ arguments. `ray_cluster.yaml` hardcodes the IP addresses of the head and worker 
 along with SSH username for logging in to worker nodes. To change these, simply edit the
 script before running.
 
+## Notes
+Due to time constraints, the included AlexNet model is not compatible with GPipe. The
+`torchgpipe` library (which is used to provide GPipe support) requires that all PyTorch
+models inherit from `nn.Sequential`. Therefore, adding support for AlexNet (or any other
+non-sequential DNN you wish to support) requires a custom `nn.Sequential` implementation.
+Please refer to the `torchgpipe` documentation for more information.
+
+## Results
+For more information about this project and our findings, please see our paper, located
+within this repo at `results/HyperTune.pdf`.
