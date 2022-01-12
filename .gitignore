@@ -139,4 +139,4 @@ cython_debug/
 
 # Misc
 *.out
-!keeplogs/*.log
+!results/*.log
