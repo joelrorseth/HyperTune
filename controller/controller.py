@@ -25,7 +25,7 @@ python controller.py \
 """
 
 supported_model_architectures = ['resnet', 'alexnet']
-supported_parallelism_strategies = ['dp', 'mp', 'gpipe']
+supported_parallelism_strategies = ['none', 'dp', 'mp', 'gpipe']
 
 
 def init_args():
